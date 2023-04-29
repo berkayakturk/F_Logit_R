@@ -1,4 +1,5 @@
 #___________Packages__________
+
 library(fda) # functional data analysis
 library(robustX) # Robust estimation and inference for regression and scale  
 library(matrixStats) # Functions that Apply to Rows and Columns of Matrices
@@ -8,6 +9,7 @@ library(robustbase) # Basic Robust Statistics
 library(RobStatTM) # Robust Statistics: Bianco and Yohai estimator for logistic regression
 library(expm) # Matrix exponential, logarithm, square root, and related functions
 library(wle) # Weighted Likelihood Estimation
+
 #____________________________
 
 options(warn = -1)
@@ -106,7 +108,7 @@ getPCA.test <-
   }
 #________________________________________________________
 
-#__________________________________Robust FPCA and classical FPCA based on logregBY estimator__________________________________
+#__________________________________Robust FPCA and classical FPCA based on logregBY estimator (2002)__________________________________
 
 log_rpca = function(Y, X, X_test, nbasis, ncomp, gp, emodel){
   
@@ -161,7 +163,7 @@ log_rpca = function(Y, X, X_test, nbasis, ncomp, gp, emodel){
 
 #________________________________________________________
 
-#____________________L1_median_function_________________
+#____________________L1 median function_________________
 
 med_L1 = function(X){
   nc = dim(X)[2]
@@ -181,7 +183,7 @@ med_L1 = function(X){
 #________________________________________________________
 
 
-#______________________Obtain_H_matrix___________________
+#______________________Obtain H matrix___________________
 getHmat = function(data, nbasis, rangeval){
   n = dim(data)[1]
   p = dim(data)[2]
@@ -198,7 +200,7 @@ getHmat = function(data, nbasis, rangeval){
 #________________________________________________________
 
 
-#____________________________Logistic_Functional_PLS_proposed_based_on_Dodge_and_Whittaker (2009)_____________________________
+#____________________________Logistic Functional PLS proposed based on Dodge and Whittaker (2009)_____________________________
 log_fpls2 = function(Y, Hmat, Hmat_test, alpha, hmax, Bsf, model){
   
   Htest = Hmat_test
