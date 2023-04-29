@@ -15,7 +15,7 @@ library(wle) # Weighted Likelihood Estimation
 options(warn = -1)
 
 
-#__________________________________logistics functional principal component analysis__________________________________
+#__________________________________Logistics functional principal component analysis__________________________________
 
 getPCA <-
   function(data, nbasis, ncomp, gp, emodel = c("classical", "robust")){
@@ -311,7 +311,7 @@ log_fpls2 = function(Y, Hmat, Hmat_test, alpha, hmax, Bsf, model){
 ##____________________________________________________________________________________________________________________________
 
 
-#_______________Correct_classification_rate_____________
+#_______________Correct classification rate_____________
 ccr = function(Y, Ypred){
   n = length(Y)
   p = 0
