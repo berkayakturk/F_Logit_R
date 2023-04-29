@@ -1,4 +1,4 @@
-# load the auxilary functions
+#______load the auxilary functions______
 
 source("functions.R")
 source("dgp.R")

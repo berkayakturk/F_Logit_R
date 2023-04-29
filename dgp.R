@@ -1,4 +1,4 @@
-#__________________data generation process without outliers (Monte Carlo)_______________
+#__________________data generation process without outliers (Monte Carlo)________________
 library(fda.usc) # Statistical Analysis of Functional Data
 
 dgp = function(N){

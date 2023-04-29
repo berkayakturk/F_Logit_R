@@ -1,4 +1,4 @@
-#___________Packages_________
+#___________Packages__________
 library(fda) # functional data analysis
 library(robustX) # Robust estimation and inference for regression and scale  
 library(matrixStats) # Functions that Apply to Rows and Columns of Matrices
