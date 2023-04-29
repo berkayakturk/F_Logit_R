@@ -5,7 +5,7 @@ This repo contains the R code used for the simulations in the manuscript "A robu
 
 # Authors
 
-Berkay Akturk, Ufuk beyaztas and Han Lin Shang
+Berkay Akturk, Ufuk Beyaztas and Han Lin Shang
 
 # Procedure
 
@@ -13,12 +13,21 @@ The main file is "run.R" and "run2". First, download all the .R files and instal
 
 # Packages
 library(fda.usc) # Statistical Analysis of Functional Data
+
 library(fda) # functional data analysis
-library(robustX) # Robust estimation and inference for regression and scale  
+
+library(robustX) # Robust estimation and inference for regression and scale 
+
 library(matrixStats) # Functions that Apply to Rows and Columns of Matrices
+
 library(pROC) # Display and analyze ROC curves
+
 library(pcaPP) # Robust PCA methods 
+
 library(robustbase) # Basic Robust Statistics 
+
 library(RobStatTM) # Robust Statistics: Bianco and Yohai estimator for logistic regression
+
 library(expm) # Matrix exponential, logarithm, square root, and related functions
+
 library(wle) # Weighted Likelihood Estimation
