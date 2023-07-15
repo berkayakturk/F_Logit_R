@@ -24,7 +24,7 @@ bhat_pca = list()
 bhat_rpls = list()
 bhat_rpca = list()
 
-rangeval = c(1,10) # value range
+rangeval = c(0,10) # value range
 gpt = seq(0, 10, length.out = 256)
 out_p = 0.1 # outlier proportion 10%
 
